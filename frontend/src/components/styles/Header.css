@@ -1,0 +1,166 @@
+/* .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F8F4F2;
+  color: #000000;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 40px;
+  text-decoration: none !important;
+  display: block !important;
+  margin: 0;
+}
+.logo:hover{
+     
+     -webkit-text-fill-color:  transparent;
+  -webkit-text-stroke-width: 2px;
+}
+.nav {
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #C8957F;
+  border-bottom: 2px solid #000000;
+  padding: 5px
+}
+
+.admin-options-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.admin-options {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 200px; 
+}
+
+.admin-options .nav-item {
+  margin: 0; 
+} */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f4f2;
+  color: #000000;
+  padding: 20px;
+  position: relative; /* Ensure relative positioning for absolute children */
+}
+
+.logo {
+  font-size: 40px;
+  text-decoration: none !important;
+  display: block !important;
+  margin: 0;
+}
+
+.logo:hover{
+-webkit-text-fill-color:  transparent;
+ -webkit-text-stroke-width: 2px;
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
+  position: relative; /* Ensure the dropdown position is relative to the nav-item */
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+  cursor: pointer;
+  position: relative; /* Ensure relative positioning for z-index */
+}
+
+.nav-link:hover {
+  color: #c8957f;
+  border-bottom: 2px solid #000000;
+  padding: 5px;
+}
+
+.admin-options-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none; /* Initially hide the dropdown */
+  z-index: 1000; /* Ensure dropdown is above other elements */
+  background-color: #ffffff;
+  margin-right: 50px !important;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item:hover .admin-options-container {
+  display: block; /* Show the dropdown on hover */
+  margin-left: -15px;
+
+}
+
+.admin-options {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+}
+
+.admin-options .nav-item {
+  margin: 0;
+}
+
+.admin-options .nav-link {
+  display: block;
+  padding: 10px;
+  color: #000000;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.admin-options .nav-link:hover {
+  background-color: #f0f0f0;
+  
+}

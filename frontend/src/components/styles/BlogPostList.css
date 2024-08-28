@@ -1,0 +1,153 @@
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.blog-container.button {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1{
+  text-align: center !important;
+  
+}
+
+.blog-title {
+  
+  margin-bottom: 40px;
+  font-size: 2.5em;
+}
+
+.blog-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.blog-post {
+  /* background-color: #f9f9f9; */
+  background-color: #F8F4F2;
+  
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pointer{
+  cursor: pointer;
+}
+
+.blog-post-title {
+  /* color: #FFFFFF; */
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.blog-post-content {
+  /* color: #FFFFFF; */
+  font-size: 1em;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.blog-post-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.blog-buttons-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.blog-button {
+  padding: 8px 16px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  /* background-color: #007bff; */
+  background-color: #000099;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.blog-edit-form {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-edit-form input[type="text"],
+.blog-edit-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.blog-edit-form textarea {
+  width: 95%;
+  height: 150px;
+}
+
+.blog-edit-form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.blog-edit-form button:hover {
+  background-color: #45a049;
+}
+
+.blog-edit-form input[type="text"]:focus,
+.blog-edit-form textarea:focus {
+  outline: none;
+  border-color: #4caf50;
+  
+}
+
+
+
+
+@media (max-width: 768px) {
+  .blog-post-title {
+    font-size: 1.3em;
+  }
+
+  .blog-post-content {
+    font-size: 0.9em;
+  }
+
+  .blog-button {
+    font-size: 0.9em;
+  }
+
+  .blog-edit-form input,
+  .blog-edit-form textarea {
+    width: 90%;
+    font-size: 0.9em;
+  }
+}

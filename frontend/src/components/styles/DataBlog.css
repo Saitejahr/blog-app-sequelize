@@ -1,0 +1,42 @@
+
+.container {
+    margin: auto; 
+    max-width: 600px !important;  
+    padding: 20px;
+  }
+  
+  .data-flex {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px; 
+  }
+  
+
+  
+ img.image {
+
+   margin-left: 40%;
+   margin-right: auto;
+    max-width: 170px;
+    height: 165px;
+    
+  }
+
+  .data-content {
+    flex: 2;
+    
+  }
+  
+  .heading {
+    font-size: 24px;
+ 
+  }
+
+  
+  .para {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    text-indent: 50px;
+  }
+  

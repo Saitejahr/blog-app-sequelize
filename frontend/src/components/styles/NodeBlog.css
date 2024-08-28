@@ -1,0 +1,45 @@
+
+.node-container {
+    margin: auto;
+    max-width: 800px; 
+    padding: 20px;
+  }
+  
+  .node-flex {
+    display: flex;
+    margin-bottom: 30px; 
+  }
+  
+  .node-image-container {
+    flex: 1;
+  }
+  
+  .node-image {
+    max-width: 100%;
+    height: 100%;
+    
+  }
+
+  .node-content {
+    flex: 2;
+    
+  }
+
+  .node-head{
+    font-size: 30px;
+    text-align: start !important;
+  }
+  
+  .node-heading {
+    font-size: 30px;
+ 
+  }
+  
+  .node-para {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    text-indent: 50px;
+    margin-bottom: 50px !important;
+  }
+  

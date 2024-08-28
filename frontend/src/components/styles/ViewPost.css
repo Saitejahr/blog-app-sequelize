@@ -1,0 +1,290 @@
+.flex-container{
+  display: flex;
+}
+.left-blog{
+  display: flex;
+  flex-direction: column;
+  text-align: start !important;
+
+  width: 20%;
+  height: 20%;
+  margin:  60px 30px;
+}
+.left-h1{
+  margin: 0;
+  display: inline-block !important;
+  font-size: 30px;
+}
+.left-p{ 
+  color: #767370 !important;
+}
+
+.left-p:hover{
+  color: #C8957F !important;
+}
+
+
+
+.blog-container {
+    width: 78%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    flex: 1;
+  }
+
+.blog-posts {
+    background-color: #F8F4F2;
+    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    
+    
+    
+}
+/* .blog-posts .blog-post-title .blog-post-content {
+  color:#000000 !important;
+} */
+
+.blog-posts:hover {
+  transform: scale(0.95);
+  
+}
+
+a{
+  text-decoration: none;
+}
+
+.blog-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  
+}
+
+
+.blog-post-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  
+}
+
+.blog-post-content {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.blog-post-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+
+
+
+@media (max-width: 490px) {
+  .left-p{ 
+    font-size: 10px !important;
+  } 
+}
+
+
+@media (max-width: 950px) {
+  .image-h1{
+    position: absolute;
+    top: 15%;
+    left: 31%;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 430px) {
+  .image-h1{
+    position: absolute;
+    top: 15%;
+    left: 18%;
+    font-size: 30px;
+  }
+}
+
+.pointer{
+  cursor: pointer !important;
+}
+
+
+.blog-image {
+  width: 100%;
+  height: auto; 
+  max-height: 500px;
+  position: relative;
+  opacity: 0.3;
+}
+
+.image-h1 {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  text-align: center;
+  width: 80%;
+}
+
+.image-p {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  text-align: justify;
+  width: 50%;
+  line-height: 1.5;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.left-blog {
+  flex: 0 0 20%; 
+  margin: 60px 30px;
+}
+
+.left-h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.left-p {
+  color: #767370;
+}
+
+
+
+@media (max-width: 1024px) {
+  .left-blog {
+    flex: 0 0 30%; 
+  }
+  .image-p {
+    font-size: 18px;
+    width: 60%;  
+  }
+}
+
+@media (max-width: 790px) {
+  .left-blog {
+    flex: 0 0 40%; 
+  }
+  
+  .image-h1 {
+    font-size: 30px; 
+  }
+  
+  .image-p {
+    font-size: 16px;
+    width: 80%;  
+  }
+}
+
+
+@media (max-width: 576px) {
+  .left-blog {
+    flex: 0 0 100%; 
+    margin: 30px 0; 
+  }
+  
+  .image-h1 {
+    font-size: 24px; 
+  }
+  
+  .image-p {
+    font-size: 14px;
+    
+  }
+}
+
+@media (max-width: 415px) {
+  .image-p {
+    font-size: 11px;
+    
+  }
+}
+
+
+/* 
+.blog-image{
+  width: 100%;
+  height: 500px; 
+  position: relative;
+  opacity: 0.3;
+}
+
+.image-h1{
+  position: absolute;
+  top: 15%;
+  left: 41%;
+  font-size: 40px;
+}
+
+.image-p{
+  position: absolute;
+  top: 25%;
+  left: 1%;
+  font-size: 20px;
+  text-align: center;
+  text-wrap: wrap !important;
+  
+} */
+
+
+/* 
+.blog-container {
+  width: 100%; 
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.blog-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.blog-posts {
+  background-color: #f8f4f2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  width: 100%; 
+}
+
+.blog-post-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.blog-post-content {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.blog-post-image {
+  width: 100%;
+  max-width: 100%; 
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+} */
